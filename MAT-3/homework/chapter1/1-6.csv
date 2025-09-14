@@ -1,7 +1,6 @@
 1-6,
-1,
-3,
-9,
-13,
-15
-
+1,\begin{array}{c} x_1 + x_2 = 2 \\ 5x_1 + 6x_2 = 9 \end{array}, "Find the solution by inverting the matrix and solving for the coeffcient as outlined in Theorem 1.6.2 (THEOREM 1.6.2 If $A$ is an invertible $n \times n$ matrix, then for each $n \times 1$ matrix $b$, the system of equations $A\mathbf{x} = \mathbf{b}$ has exactly one solution, namely, $\mathbf{x} = A^{-1}\mathbf{b}$.)"
+3,\begin{array}{rcl} x_1 + 3x_2 + x_3 & = & 4 \\ 2x_1 + 2x_2 + x_3 & = & -1 \\ 2x_1 + 3x_2 + x_3 & = & 3 \end{array}
+9,"\begin{array}{ll} x_1 - 5x_2 = b_1 \\ 3x_1 + 2x_2 = b_2 \\ \text{(i)} \\ b_1 = 1, \quad b_2 = 4 \end{array} \qquad \qquad \text{(ii)} \quad b_1 = -2, \quad b_2 = 5", Solve the system of equations by reducing the appropriate augmented matrix.
+13,\begin{array}{c} x_1 + 3x_2 = b_1 \\ -2x_1 + x_2 = b_2 \end{array}, Determine conditions on the $b_i$'s if any in order to guarantee that the linear system is consistent.
+15,\begin{array}{c} x_1 - 2x_2 + 5x_3 = b_1 \\ 4x_1 - 5x_2 + 8x_3 = b_2 \\ -3x_1 + 3x_2 - 3x_3 = b_3 \end{array}
