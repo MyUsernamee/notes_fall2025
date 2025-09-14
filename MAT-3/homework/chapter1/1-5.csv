@@ -1,0 +1,10 @@
+1-5,
+1,\begin{array}(a) \begin{bmatrix} 1 & 0 \ -5 & 1 \end{bmatrix} (b) & \begin{bmatrix} -5 & 1 \ 1 & 0 \end{bmatrix} \\ (c) \begin{bmatrix} 1 & 1 & 0 \ 0 & 0 & 1 \ 0 & 0 & 0 \end{bmatrix} & (d) \begin{bmatrix} 2 & 0 & 0 & 2 \ 0 & 1 & 0 & 0 \ 0 & 0 & 1 & 0 \ 0 & 0 & 0 & 1 \end{bmatrix} \end{array}, Determine whether the given matrix is elementary.
+5 a),"E = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}, \quad A = \begin{bmatrix} -1 & -2 & 5 & -1 \\ 3 & -6 & -6 & -6 \end{bmatrix}", In Exercises 5–6 an elementary matrix E and a matrix A are given. Identify the row operation corresponding to E and verify that the product EA results from applying the row operation to A.
+b),"E = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & -3 & 1 \end{bmatrix}, \quad A = \begin{bmatrix} 2 & -1 & 0 & -4 & -4 \\ 1 & -3 & -1 & 5 & 3 \\ 2 & 0 & 1 & 3 & -1 \end{bmatrix}"
+9 b),A = \begin{bmatrix} 2 & -4 \\ -4 & 8 \end{bmatrix}, "Determine if $ad-dc\ne0$, then if it is, find the inversion of the matrix using the standard 2x2 formula. Afterwhich, use the inversion algorithm to find $A^{-1}$"
+11 a), \begin{bmatrix} 1 & 2 & 3 \\ 2 & 5 & 3 \\ 1 & 0 & 8 \end{bmatrix}, Use the inversion algorithm to find the inverse of the matrix (if it exists)
+15,\begin{bmatrix} 2 & 6 & 6 \\ 2 & 7 & 6 \\ 2 & 7 & 7 \end{bmatrix}
+17,\begin{bmatrix} 2 & -4 & 0 & 0 \\ 1 & 2 & 12 & 0 \\ 0 & 0 & 2 & 0 \\ 0 & -1 & -4 & -5 \end{bmatrix}
+19 b),\begin{bmatrix} k & 1 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & k & 1 \\ 0 & 0 & 0 & 1 \end{bmatrix}, Find the inverse of the matricies where $k_{1 \to 4}$ are all nonzero.
+23,\begin{bmatrix} -3 & 1 \\ 2 & 2 \end{bmatrix}, Express the matrix and its inverse as products of elementary matricies.

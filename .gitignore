@@ -1,0 +1,7 @@
+**/textbook.pdf
+**/*.aux
+**/*.fdb_latemk
+**/*.log
+**/*.fls
+**/*.out
+**/*.synctex*

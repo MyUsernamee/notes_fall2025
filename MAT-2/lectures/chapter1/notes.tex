@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{shortex}
+\usepackage{amsmath}
+\title{Chapter 1}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+\subsection{Basic Definitions and Terminology}
+
+There are different ways of notating derivatives equations.
+
+\[
+    y&=f(x) \\
+    \der{y}{x}&=f^\prime(x) \\
+    y^\prime &= f^\prime(x) \\
+\]
+
+An example of a differential equation is:
+
+\[
+    y&=e^{x^3}\\
+    \der{y}{x}&=3x^2 e^{x^3}\\
+    \der{y}{x}&=3x^2 y\\
+\]
+
+\subparagraph{Def: Differential Equations (DE) }
+
+$\to$ An equation continaing the derivative(s) or differential(s) of one or more dependent variables, with respect to (wrt) one or more independent variables.
+
+\subsubsection{Types of DEs}
+
+\begin{tabular}{ c c c }
+    Type & Order & Linearity \\
+    \hline \\
+    ODE & Highest Derivative involved in the DE. & ? \\
+    PDE & & 
+\end{tabular}
+
+\hfill \\
+
+Example of ODE:
+
+\[
+    xdy - 4x^2ydx &= 0 \\
+    \der[2]{y}{x} - 2 \der{y}{x} + 6y &= 0 & \to && y^{\prime\prime} - 2y^\prime + 6y=0  \\
+\]
+
+\subsubsection{General nth order ODE:}
+
+\[
+    F(x, y, \der{y}{x}, \der[2]{y}{x}, \der[3]{y}{x}, \dots, \der[n]{y}{x}) = 0 \\
+    F(x, y, y^\prime, y^{\prime\prime}, y^{(3)}, \dots, y^{(n)}) = 0 \\
+\]
+
+\subsubsection{Linear, nth order, ODE}
+
+\[
+    a_n(x) y^{(n)} + a_{n-1}(x)y^{(n-1)} + \dots + a_1(x)y^\prime + a_0(x)y = g(x)
+\]
+
+\subsubsection{Non-linear, nth order, ODE:}
+
+\[
+    yy^{\prime\prime} - 2y^\prime = x^2
+\]
+
+We have $y$ times a $y^{\prime\prime}$, which is not allowed for linear ODEs
+
+\subparagraph{Ex:} Verify that $y=e^{3x}$ is a sol'n to:
+
+\[
+    y^{\prime\prime} - 2y^\prime - 3y = 0 \\
+    y=e^{3x} \to y^\prime=3 e^{3x} \to y^{\prime\prime} = 9 e^{3x} \\
+    9 e^{3x} - 2(3 e^{3x}) - 3(e^{3x}) =^{?} 0
+\]
+
+\subparagraph{Ex:} 
+
+\[
+    (y^{\prime\prime})^2 + y ^2 + 4 = 0 \\
+\]
+
+Second order ODE, no solution. $f(x)^2>0$. Positive + Positive + Positive = 0 ???
+
+\pagebreak
+
+Solutions to DE's are usually of the form $G(x, y, c_1, \dots, c_n)$. For Example:
+
+\[
+    y^{\prime\prime} + y &=0 \\
+    y&=c_1cosx + c_2sinx \\
+\]
+
+$c_1$ and $c_2$ can be any constants and it will satisfy the original DE. This kind of solution is called a general solution.
+
+\end{document}

@@ -1,0 +1,28 @@
+2.4,
+1,(2x - 1)dx + (3y + 7)dy = 0, Find the general solution of the given differential equation. State an interval on which the general solution is defined.
+3,(5x + 4y)dx + (4x - 8y^3)dy = 0
+5,(2y^2x - 3)dx + (2yx^2 + 4)dy = 0
+7,y' + 3x^2y = x^2
+9,x^2y' + xy = 1
+13,"x\,dy=(x\,\sin\,x-y)dx"
+17,\cos x \frac{dy}{dx} + y \sin x = 1
+21,"x^2y' + x(x+2)y = e^x"
+25,"y\,dx + (xy + 2x - ye^y)dy = 0"
+29,"y\,dx - 4(x+y^6)\,dy = 0"
+33,"y\ dx + (x + 2xy^2 - 2y)\ dy = 0"
+37,"(x + 2)^2 \frac{dy}{dx} = 5 - 8y - 4xy"
+41,"\frac{dy}{dx} + 5y = 20, \quad y(0) = 2"
+AK
+1,x^2 - x + \frac{3}{2}y^2 + 7y = c
+3,\frac{5}{2}x^2 + 4xy - 2y^4 = c
+5,"x^2y^2 - 3x + 4y = c"
+7,"\text{Not exact, but homogenous.}"
+9,"xy^3 + y^2 \cos x - \frac{1}{2}x^2 = c"
+13,"xy - 2xe^x + 2e^x - 2x^3 = c"
+17,x^3y^3 - \tan^{-1} 3x = c
+21,y - 2x^2y - y^2 - x^4 = c
+25,\frac{1}{3}x^3 + x^2y + xy^2 - y = \frac{4}{3}
+29,y^2 \sin x - x^3y - x^2 + y \ln y - y = 0 
+33,k = 1
+37,"M(x, y) = 6xy^3\\N(x, y) = 6xy^3\\N(x, y) = 4y^3 + 9x^2y^2\\\frac{\partial M}{\partial y} = 18xy^2 = \frac{\partial N}{\partial x}\\Solution is 3x^2y^3 + y^4 = c."
+41," M(x, y) = 2xy^2 + 3x^2\\N(x, y) = 2xy^2 + 3x^2\\N(x, y) = 2x^2y\\\frac{\partial M}{\partial y} = 4xy = \frac{\partial N}{\partial x}\\Solution is x^2y^2 + x^3 = c."

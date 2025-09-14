@@ -1,0 +1,12 @@
+1-1
+1,(1-x)y''-4xy'+5y=\cos x, State wether the given differential equations are linear or nonlinear. Give the order of each.
+5,x^3y^{(4)} - x^2y'' + 4xy' - 3y = 0
+9,(\sin x)y''' - (\cos x)y' = 2
+13,\frac{dy}{dx} - 2y = e^{3x}; \quad y = e^{3x} + 10e^{2x}, Verify that the indicated function is a solution for the given differential equations. Where appropriate $c_1$ and $c_2$ denote constants.
+17,y' + y = \sin x; \quad y = \frac{1}{2}\sin x - \frac{1}{2}\cos x + 10e^{-x}
+21,y = 2xy' + y(y')^{2}; \quad y^{2} = c_{1}(x + \frac{1}{4}c_{1})
+25,\frac{dX}{dt} = (2 - X)(1 - X); \quad \ln \frac{2 - X}{1 - X} = t
+29,y'' - 6y' + 13y = 0; \quad y = e^{3x} \cos 2x
+33,y'' + (y')^2 = 0; \quad y = \ln|x + c_1| + c_2
+37,x^{2}y'' - 3xy' + 4y = 0; \quad y = x^{2} + x^{2}\ln x; x > 0
+41,xy' - 2y = 0; \quad y = \begin{cases} -x^2; & x, In Problems 41 and 42 verify that the indicated piecewise-defined function is a solution of the given differential equation.

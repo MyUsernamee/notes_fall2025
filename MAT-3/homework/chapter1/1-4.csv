@@ -1,0 +1,14 @@
+1-4,
+3,(a) (A^T)^T = A (b) (AB)^T = B^T A^T, "Verify that the matricies and scalars satisfy the stated properties. \[A = \begin{bmatrix} 3 & -1 \\ 2 & 4 \end{bmatrix}, \quad B = \begin{bmatrix} 0 & 2 \\ 1 & -4 \end{bmatrix},C = \begin{bmatrix} 4 & 1 \\ -3 & -2 \end{bmatrix}, \quad a = 4, \quad b = -7 \blacktriangleleft\]"
+4,(a) (A + B)^T = A^T + B^T (b) (aC)^T = aC^T
+5,A = \begin{bmatrix} 2 & -3 \\ 4 & 4 \end{bmatrix}, Compute the inverse of the matrix.
+7,C = \begin{bmatrix} 2 &amp; 0 \\ 0 &amp; 3 \end{bmatrix}
+9,\begin{bmatrix} \frac{1}{2}(e^{x}+e^{-x}) & \frac{1}{2}(e^{x}-e^{-x})\\ \frac{1}{2}(e^{x}-e^{-x}) & \frac{1}{2}(e^{x}+e^{-x}) \end{bmatrix}
+13,(ABC)^{-1} = C^{-1}B^{-1}A^{-1}, Verify that the equation is valid for \[A = \begin{bmatrix} 2 & -3 \\ 4 & 4 \end{bmatrix} \\ B = \begin{bmatrix} 3 &amp; 1 \\ 5 &amp; 2 \end{bmatrix} \\ C = \begin{bmatrix} 2 & 0 \\ 0 & 3 \end{bmatrix} \\ D = \begin{bmatrix} 6 &amp; 4 \\ -2 &amp; -1 \end{bmatrix} \]
+15, (7A)^{-1} = \begin{bmatrix} -3 &amp; 7\\ 1 &amp; -2 \end{bmatrix}, Find $A$.
+19 a),A = \begin{bmatrix} 3 &amp; 1 \\ 2 &amp; 1 \end{bmatrix} \\ A^3, Compute the given equation using $A$.
+b), A^{-3}
+21,A = \begin{bmatrix} 3 &amp; 1 \\ 2 &amp; 1 \end{bmatrix}, Compute $p(A)$ for the given functions: \[p(x) = x - 2\\p(x) = 2x2 - x + 1\\p(x) = x3 - 2x + 1\]
+33 a),,"Show that if a square matrix $A$ satisfies the equation $A^2 + 2A + I = 0$, then $A$ must be invertible. What is the inverse?"
+39,(AB)^{-1}(AC^{-1})(D^{-1}C^{-1})^{-1}D^{-1}, "In Exercises 37–38, determine whether A is invertible, and if so, find the inverse. [Hint: Solve AX = I for X by equating corresponding entries on the two sides.]"
+43 a),"\text{Show that if A is invertible and AB = AC, then B = C."

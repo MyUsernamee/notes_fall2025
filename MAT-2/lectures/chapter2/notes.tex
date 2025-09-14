@@ -1,0 +1,263 @@
+\documentclass{article}
+\usepackage{shortex}
+\title{Chapter2}
+\setcounter{section}{2}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+\subsection{Preliminary Theroy}
+
+\subsubsection{IVP - Initial Value Problem}
+
+\[
+    \der{y}{x}=f(x, y) & y(x_0) = y_0 & x_0 \in I, y_0 \in \Re
+\]
+
+\subsubsection{Thm - Existence and Uniqueness Theorem}
+
+If $f(x, y)$ and $\pder{f}{y}$ are continuous functions on I, then there exists a unique sol'n
+
+\subparagraph{Ex}
+
+\[
+    \der{y}{x} &=xy ^{\frac{1}{2}} & && y(0)&=0 \\
+    y&=0 & \to && \der{y}{x}&=0 \\
+    0&=x\cdot 0 ^{\frac{1}{2}} \\
+    0&=0
+\]
+
+\[
+    f(x,y) &=xy ^{\frac{1}{2}} \\
+    \pder{f}{y} &= x \cdot \frac{1}{2}y ^{-\frac{1}{2}} \\
+    f(x,y)&\text{ is not continuous on } I
+\]
+
+\subsection{Seperable Variables}
+
+If $g(x)$ is cts, $\der{y}{x} = g(x)$ is solved by inegration. 
+
+\[
+    y=\int g(x) dx + C &= G(x) + C
+\]
+
+\subsubsection*{Example:}
+
+\begin{itemize}
+    \item 
+        \[
+            \der{y}{x}&=x-\frac{1}{1+x^2} \\
+            y&=\int (x- \frac{1}{1 + x^2}) dx \\
+             &= \frac{1}{2}x^2 - tan^{-1} x + C
+        \]
+    \item 
+        \[
+            \der{y}{x}&=tan x \\
+                      &= \dots \\
+                     &= |sec x|
+        \]
+\end{itemize}
+
+\subsubsection{Definition:}
+\subsubsection*{Toolbox:}
+
+A \underline{seperable} DE is one of the form $\der{y}{x} = \frac{g(x)}{h(y)}$. While not all DEs come in this form, if you can manipulate it algebraically to this, you can use this tool:
+
+\[
+    \der{y}{x} &= \frac{g(x)}{h(y)} && \text{Assume that $y=f(x)$ is a solution.} \\
+    h(y) \cdot \der{y}{x} &= g(x) \\
+    h(f(x))\cdot f'(x) &= g(x) \\
+    \int h(f(x)) f'(x) dy &= \int g(x) dx + C \\
+    h(y)dy &= g(x) dx
+\]
+
+We can treat $\der{y}{x}$ as a fraction, in this scenario.
+
+\subsubsection*{Example:}
+\begin{enumerate}
+    \item \[
+            \der{y}{x} &= \frac{-x}{y}; \quad y(3)=4 \\
+            ydy &= -x dx \\
+            \int y dy &= -\int x dx \\
+            \frac{1}{2}y^2 &= -\frac{1}{2}x^2 \\
+            \dots %TODO
+    \]
+    \item \[
+            (1+x)dy - ydx &= 0\\
+            (1+x)dy &= ydx \\
+            \int \frac{1}{y}dy &=\int \frac{1}{1+x}dx + c_1 \\
+            ln|y| &= ln|1+x| + c_1 \\
+            |y| &= |1+x|e^{ c_1 } \\
+            y &= c|1+x| \quad c \neq 0 \\
+    \]
+    \item \[
+            xe^{-y}sinxdx -ydy &= 0 \\
+            \int x \sin x \;dx &= \int e^{-y}ydy  \\
+            \int x \sin x \;dx &= \int e^{-y}ydy  \\
+            u=x & v=-cosx \\
+            du=dx & dv=sinx dx \\
+            -xcosx + \int cosx \; dx &= ye^y - \int e^y \; dy + C \\
+            -xcosx + sinx &= ye^y - e^y + C \\
+    \]
+    \item \[
+            \der{y}{x} &= y^2 - 4; \quad y(0) = -2 \\
+            \int \frac{dy}{y^2-4}&=\int dx + c_1 \\
+            \int \frac{dy}{(y-2)(y+2)}&=\int dx + c_1 \\
+            \int (\frac{\frac{1}{4}}{y-2} + \frac{\frac{1}{4}}{y+2})dy &=x+c_1
+            \frac{1}{4}ln | y-2 | - ln |y + 2| &= x + c_1 \\
+            ln | y-2 | - ln |y + 2| &= 4x + c_1 \\
+            |\frac{ y-2 }{ y + 2 }| &= e ^{4x + c_1 }\\
+            |\frac{ y-2 }{ y + 2 }| &= e ^{4x + c_1 }\\
+            \dots
+    \]
+    
+    
+    
+\end{enumerate}
+
+\subsection{}
+
+\subsection{Exact Differential Equations}
+
+Given:
+
+\[
+    M(x,y)dx + N(x,y)dy &= 0 \\
+\]
+
+If $\pder{M}{y} = \pder{N}{x}$, then the DE above is an exact DE. In other words $f_x=M$ and $f_y = N$.
+
+So for example:
+
+\[
+    f(x,y) &= x^2 - 5xy + y^3 \\ 
+    f_x=2x-5y &\to f_{xy} = -5 \\
+    f_y=5x+3y^2 &\to f_{yx} = -5 \\
+\]
+\[
+    (2x-5y)dx + (-5x+3y^2)dy &= 0
+\]
+
+This is an exact differential equation.
+\subsection{Linear Equations}
+
+Soln to a standard DE in standard form is:
+
+\[
+    y &= \frac{1}{e^{\int P(x)dx}}(\int e^{\int P(x) dx}f(x) + c) \\
+    \mu &= e^{\int P(x) dx} \\
+    y &= \frac{1}{\mu(x)}\left(\int \mu(x)f(x) + c\right) \\
+\]
+
+\subsubsection{}
+
+\[
+    x \der{y}{x} - 4y &= x^{6}e^{x} \\
+    \der{y}{x} - 4 &= x^{5}e^{x} \\
+    P(x) \quad& f(x) \\
+    \mu(x) = e^{\int_{-\frac{4}{x}}\d x } = e^{ln| x |^{-4} = \frac{1}{x^{4}}} \\
+    y &= \frac{1}{\frac{1}{x^{4}}}\left[\int\frac{1}{x^{4}}x^{5}e^{x}  \d x \right] \\
+    y &= x^{4}\left[xe^{x}-e^{x}+c\right] \\
+    &= x^{5}e^{x}-x^{4}e^{x}+cx^{4} \\
+\]
+
+\subsubsection{}
+
+\[
+    \der{y}{x} - 3y &= 0 \\
+    \mu(x) &= e^{\int -3 \d x} = e^{-3x} \\
+    y &= \frac{1}{e^{-3x}} (\int e^{-3x} \cdot  0 \quad \d x + c) \\
+    y &= ce^{3x} \\
+\]
+
+\subsubsection{}
+
+\[
+    (x^{2} + 9)y' + xy &= 0 \\
+    y' + \frac{x}{x^{2} + 9} \cdot y &= 0 \\
+    y &= \frac{1}{\sqrt{x^{2} + 9}}(\int \sqrt{x^{2} + 9} \cdot 0 \quad \d x + c) \\
+    y &= \frac{c}{\sqrt{x^{2} + 9}}
+\]
+
+\subsubsection{}
+
+\[
+    y' + 2xy &= x && y(0) = -3 \\
+    \mu(x) &= e^{\int 2x \d x} = e^{x^{2}} \\
+    y &= \frac{1}{e^{x^{2}}} (\int x e^{x^{2}} + c) \\
+    &= \frac{1}{e^{x^{2}}} ( \frac{1}{2} e^{x^{2}} + c ) \\
+    &= \frac{1}{2} + \frac{c}{e^{x^{2}}} \\
+    -3 &= \frac{1}{2} + \frac{c}{e^{0}} \\
+    -3 &= \frac{1}{2} + c \\
+    -\frac{7}{2} &= c \\
+    y&= \frac{1}{2} - \frac{7}{2e^{x^{2}}}
+\]
+
+\subsubsection{}
+
+\[
+    x \der{y}{x} + y &= 2x ; \quad y(1) = 0 \\
+    \der{y}{x} + \frac{1}{x} \cdot y &= 2 \\
+    \mu(x) &= e^{\int \frac{1}{x}} &= e^{ln|x|} = |x| = x \\
+    y &= \frac{1}{x} (\int x \cdot 2 \d x + c) \\
+    y &= \frac{1}{x} (x^{2} + c) = x + \frac{c}{x}
+    0 &= 1 + \frac{c}{1} \\
+    c &= -1
+\]
+
+\subsubsection{}
+
+\[
+    \der{y}{x} &= \frac{1}{x + y^{2}}; \quad y(-2) = 0 \\
+    \der{x}{y} &= x + y^{2} \\
+    \der{x}{y} - x &= y^{2} \\
+    x &= \frac{1}{\mu} (\int \mu f(y) + \d y + c) \\
+    \mu(y) &= e^{\int -1 \d y} = e^{-y} \\
+    x &= \frac{1}{e^{-y}} (\int y^{2} e^{-y} \d y) \\
+    u &= y^{2} && \d v &= e^{-y} \\
+    \d u &= 2y && v &= -e^{-y} \\
+    x &= -y^{2}e^{-y} + \int 2y e^{-y} \d y \\
+    u &= 2y && \d v &= e^{-y} \\
+    \d u &= 2 && v &= -e^{-y} \\
+    x &= -y^{2}e^{-y} -2ye^{-y} + \int 2 e^{-y} \d x \\
+    x &= -e^{-y}(y^{2} +2y + 2) \\
+    \dots
+\]
+
+\subsection{Bernoulli's Equation}
+
+\[
+    \der{dy}{dx} + P(x)y &= f(x)y^{n} \\
+    y^{-n}\der{y}{x} + P(x)y^{1-n} &= f(x) \\
+    \text{let} \quad w &= y^{1-n} \\
+    \der{w}{x}&= (1-n)y^{1-n-1} \der{y}{x} \\
+    &= (1-n)y^{-n} \der{y}{x} \\
+    \frac{1}{1-n}\cdot \der{w}{x} &= y^{-n}\cdot \der{y}{x} \\
+    \frac{1}{1-n}\cdot \der{w}{x} + P(x)w &= f(x) \\
+    \der{w}{x} + (1-n)P(x)w &= (1-n)f(x) \\
+    w &= \frac{1}{\mu} (\int \mu \cdot f(x) \d x + c)
+\]
+
+\subsubsection{}
+
+\[
+    \der{y}{x} + \frac{1}{x}y &= xy^{2} && \text{Bernoulli, $n=2$} \\
+    \text{let} \quad w &= y^{1-2} = y^{-1} \\
+    \der{w}{x} &= -y^{-2} \der{y}{x} \\
+    \der{w}{x} &= \frac{1}{ -y^{2} } \der{y}{x} \\
+    \der{y}{x} &= -y^{2} \der{w}{x} \\
+    w&=\frac{1}{y}\\
+    y&=\frac{1}{w} \\
+    y^{2}&=\frac{1}{w^{2}} \\
+    \der{y}{x} &= - \frac{1}{w^{2}} \cdot \der{w}{x} \\
+    -\frac{1}{w^{2}} \der{w}{x} + \frac{1}{x} \cdot \frac{1}{w} &= (x \cdot \frac{1}{w^{2}}) (-w^{2}) \\
+    \der{w}{x} - \frac{1}{x} \cdot w &= -x \\
+    \mu(x) &= e^{\int - \frac{1}{x} \d x} = e^{-ln|x|} = e^{ln|x|^{-1}}=|x|^{-1}=\frac{1}{x} \\
+    w &= \frac{1}{M(x)} (\int \mu(x) f(x) \d x + c) \\
+      &= \frac{1}{\frac{1}{x}}(\int \frac{1}{x}\cdot -x \d x + c) = x(-x + c) = -x^{2} + cx \\
+    \frac{1}{y} &= -x^{2} + cx \\
+    y &= \frac{1}{cx - x^{2}}
+\]
+\end{document}

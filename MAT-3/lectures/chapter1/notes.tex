@@ -1,0 +1,606 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{shortex}
+\usepackage{custom}
+\usepackage{hyperref}
+\title{Chapter 1}
+
+\author{Delano Leslie}
+
+\begin{document}
+\maketitle
+\pagebreak
+
+\section{Linear Algebra}
+\subsection{}
+
+Linear algebra is about linear functions.
+
+1. Linear functions are any 1 degree polynomial
+
+\[
+    ax+by=c \\
+    y=mx+b \\
+    f(x)=2x+1 \\
+    y = 2x + 1 \\
+\]
+
+\[
+\begin{bmatrix}
+    2 \\
+    1 
+\end{bmatrix}
+&=2\begin{bmatrix}
+    3
+\end{bmatrix} +
+\begin{bmatrix}
+    0 \\ 1
+\end{bmatrix} \\
+&= 2 \vec i + \vec j 
+\]
+
+2. Solutions for linear equations
+\begin{enumerate}
+    \item no solution
+    \item one solution.
+    \item infinetly many solutions
+\end{enumerate}
+
+\subparagraph{14 c)}
+
+\[
+    4x_1+2x_2+3x_3+x_4&=20 & \text{Back Substituion.} \\
+                      & let \, x_4 = s \\ 
+                      & let \, x_3 = r \\ 
+                      & let \, x_2 = t \\ 
+    4x + 2t + 3r + s &= 20 \\
+    x &= \frac{1}{4}( 20 - 2t - 3r - s )  \\
+\]
+
+3. Augmented matrix
+
+\subparagraph{8 a)}
+\[
+    3x_1 - 2x_2 &= -1 \\
+    4x_1 + 5x_2 &= 3 \\
+    7x_1 + 3x_2 &= 2 \\
+    \text{Can be written as} \\
+    \begin{bmatrix}
+        3 & -2 & -1 \\ 
+        4 & 5 & 3 \\ 
+        7 & 3 & 2 \\ 
+    \end{bmatrix}
+\]
+
+4. Elementary row operations (ERO)
+
+\begin{enumerate}
+    \item multiply a non zero number to the whole row.
+    \item add to another row.
+    \item exchange the rows.
+\end{enumerate}
+
+\subsection{Gaussian Elimination}
+
+We can simplify fractions and other things in math by using an equivilent simpler form. For example:
+\[
+    \frac{2}{4} &= \frac{1}{2} \\
+\]
+
+In linear algebra we be given a matrix by size with this notation:
+\[
+    2x2 &\to (\text{rows}\:x\:\text{columns})
+\]
+
+\[
+    \begin{bmatrix}
+        a & b \\ c & d 
+    \end{bmatrix}
+\]
+
+We can simplify this to row echelon form (REF)
+\[
+    \begin{bmatrix}
+        \_ & \_ \\ 0 & \_ 
+    \end{bmatrix}
+\]
+
+The first number is the pivot number.
+
+Or it can be simplified to Reduced Row Echelon Form ( RREF)
+\[
+    \begin{bmatrix}
+        1 & 0 \\ 0 & 1 
+    \end{bmatrix}
+\]
+
+\subparagraph{1 c)}
+
+\[
+    \begin{bmatrix}
+        0 & 1 & 0 \\
+        0 & 0 & 1 \\
+        0 & 0 & 0 \\
+    \end{bmatrix}
+\]
+
+This is an example of both.
+
+\subparagraph{Trivial Solutions}
+This is when all solutions are 0.
+
+Methods:
+\begin{itemize}
+    \item Gaussian elimination. REF.
+    \item Guassian - Jordan. RREF.
+\end{itemize}
+
+\subparagraph{16.}
+
+\[
+    2x - y - 3z = 0 \\
+    -x + 2y - 3z = 0 \\
+    x + y + 4z = 0 \\
+\]
+
+\[
+    &\begin{bmatrix}
+        2 & -1 & -3 & 0 \\
+        -1 & 2 & -3 & 0 \\
+        1 & 1 & 4 & 0 \\
+    \end{bmatrix}  \\
+    R_1 \to R_3 \to & 
+    \begin{bmatrix}
+        2 & -1 & -3 & 0 \\
+        -1 & 2 & -3 & 0 \\
+        1 & 1 & 4 & 0 \\
+    \end{bmatrix} \\
+    R_1 + R_2 \; | \; R_1(-2)+R_3 \to  & 
+    \begin{bmatrix}
+        2 & -1 & -3 & 0 \\
+        -1 & 2 & -3 & 0 \\
+        1 & 1 & 4 & 0 \\
+    \end{bmatrix} \\
+    R_2 + R_3 \to  & 
+    \begin{bmatrix}
+        2 & -1 & -3 & 0 \\
+        -1 & 2 & -3 & 0 \\
+        1 & 1 & 4 & 0 \\
+    \end{bmatrix} \\
+\] % TODO: Finish / fix these matricies.
+
+\subsubsection*{Cont...}
+
+When reducing a matrix, depending on which form you are trying to acheive (RREF, REF) dictates which method of elminiation you should use.
+
+Given:
+
+\[
+    \begin{bmatrix}
+    \end{bmatrix}
+\]
+
+\begin{center}
+    \begin{tabular}{ | c | c | }
+        RREF & Gaussian-Jordan elimination \\
+        REF  & Guassian Elimination
+    \end{tabular}
+\end{center}
+
+When doing a reduction you make the each number down the diagonal your pivot. Then you only affect the items in your column. You want to go left to right because failing to do so can cause previous reductions to change.
+
+\[
+    \begin{bmatrix}
+        a & b & c \\ 0 & e & f \\ 0 & 0 & j
+    \end{bmatrix}
+\]
+
+\subsubsection*{6.}
+
+\[
+    2x_1 + 2x_2 + 2x_3 &= 0 \\
+    -2x_1 + 5x_2 + 2x_3 &= 0 \\
+    8x_1 + x_2 + 4x_3 &= 0 \\
+\]
+
+\[
+   & \begin{bmatrix}
+       2 & 2 & 2 & 0 \\
+       -2 & 5 & 2 & 1 \\
+       8 & 1 & 4 & -1 \\
+   \end{bmatrix} \\
+    R_1 + R_2 \quad R_1(-4) + R_3 \to& \begin{bmatrix}
+        2 & 2 & 2 & 0 \\
+        0 & 7 & 4 & 1 \\
+        0 & -7 & -4 & -1 \\ 
+    \end{bmatrix} \\
+    R_2 + R_2 \to& \begin{bmatrix}
+        2 & 2 & 2 & 0 \\
+        0 & 7 & 4 & 1 \\
+        0 & 0 & 0 & 0
+    \end{bmatrix} \\
+    R_1 \cdot \frac{1}{2} \to& \begin{bmatrix}
+        1 & 1 & 1 & 0 \\
+        0 & 7 & 4 & 1 \\
+        0 & 0 & 0 & 0
+    \end{bmatrix}
+\]
+
+\[
+    1x_1 + 1x_2 + 1x_3 &= 0 \\
+    7x_2 + 4x_3 &= 1 \\
+    \hfill \\
+    \text{let}\quad x_3 &= t \\
+    x_1 + x_2 + t &= 0 \\
+    7x_2 + 4t &= 1 \\
+    \hfill \\
+    7x_2 &= 1 - 4t \\
+    x_2 &= \frac{1 - 4t}{7} \\
+    \hfill \\
+    x_1 + \frac{1 - 4t}{7} + t &= 0 \\
+    \dots % TODO:
+\]
+
+\subsection{Operations on matricies}
+
+\subsubsection{Basic arithmetic}
+If the matrices are the same size:
+
+\[
+    A + B &= \begin{bmatrix} a_1 + b_1 & a_2 + b_2 \\ a_3 + b_3 & a_4 + b_4 \end{bmatrix} \\
+    A - B &= \begin{bmatrix} a_1 - b_1 & a_2 - b_2 \\ a_3 - b_3 & a_4 - b_4 \end{bmatrix} \\
+    kA &= \begin{bmatrix} ka_1 & ka_2 \\ ka_3 & ka_4 \end{bmatrix} \\
+\]
+
+\subsubsection{Matrix multiplication}
+
+First recall:
+
+\[
+    \vec u \cdot \vec v &= u_1 + v_1 + u_2 + v_2
+\]
+
+This naturally extends to matricies, you can imagine each row and column as a vector.
+
+The operation goes like this:
+
+
+\[
+    \begin{bmatrix}
+        a_1 & a_2 \\ a_3 & a_4
+    \end{bmatrix}
+    \begin{bmatrix}
+        b_1 & b_2 \\ b_3 & b_4
+    \end{bmatrix} &= 
+    \begin{bmatrix}
+        a_1 b_1 + a_2 b_3 & a_1 b_2 + a_2 b_4 \\ 
+        a_3 b_1 + a_4 b_3 & a_3 b_2 + a_4 b_4 \\ 
+    \end{bmatrix}
+\]
+
+You can imagine it as taking each row vector in $A$, $R_n$, and each column vector in $B$, $C_n$, taking the dot product and setting the resulting element in the final matrix to the result.
+
+\subparagraph{Remember:} It is ROW x COLUMN.
+
+The resulting size can then be imagined as:
+
+\[
+    A_R \text{x} B_C 
+\]
+
+\subparagraph{Note:} The resulting matrix always has to be square.
+
+\subsubsection{Trace}
+
+Trace of $A$: $n$x$n$
+\[
+    T_r(A) &= a_1 + a_4 \\
+\]
+
+Take the vector along the diagonal.
+
+\subsubsection{Transpose}
+
+\[
+    A^T &= \begin{bmatrix}
+        a_1 & a_3 \\ a_2 & a_4 \\
+    \end{bmatrix}\\
+        C_n &\to R_n
+\]
+
+\subsubsection*{3. k)}
+
+\[
+    B &= \begin{bmatrix}
+        4 & -1 \\ 0 & 2 
+    \end{bmatrix} \\
+    7B &= \begin{bmatrix}
+        28 & -7 \\ 0 & 14 
+    \end{bmatrix} \\
+    4tr(7B) &= 4( 28 + 14 ) \\
+    4(42) &= 168
+\]
+
+\subsubsection*{4. f)}
+
+\[
+    B - B^T &= \begin{bmatrix}
+        4 & -1 \\ 0 & 2
+    \end{bmatrix} - \begin{bmatrix}
+        4 & 0 \\ -1 & 2
+    \end{bmatrix} \\
+            &= \begin{bmatrix}
+                0 & -1 \\ 1 & 0
+            \end{bmatrix}
+\]
+
+\subsubsection*{Recall:}
+
+\[
+    2x &= 3 \\
+    x &= \frac{3}{2}\\
+    \hfill \\
+    Ax&=b && \text {We can't divide by $A$}
+    A^{-1}Ax&=A^{-1}b \\
+    Ix&=A^{-1}b \\
+    x&=A^{-1}b \\
+\]
+
+\subsection{Inverse of a matrix}
+
+\subsubsection{Identitiy matrix, $n$x$n$}
+
+\[
+    I &= \begin{bmatrix}
+        1 & \dots & 0 \\
+        \vdots & \ddots &  \\
+        0 &  & 1 \\
+    \end{bmatrix}
+\]
+
+\[
+    I_2 &= \begin{bmatrix}
+        1 & 0 \\ 0 & 1
+    \end{bmatrix}
+\]
+
+\subsubsection{Only square matricies can have inverse.}
+\subsubsection{Find the inverse:}
+
+\[
+    A &= \begin{bmatrix}
+        a & b \\ c & d
+    \end{bmatrix} && A^{-1}=\frac{1}{ad-bc}\begin{bmatrix}
+        d & -b \\ -c & a
+    \end{bmatrix}
+\]
+
+\[
+    x=&10y\\
+    x=&10y\\
+    x=&10y\\
+\]
+
+
+\subsection{}
+%TODO: Fill in 1.5
+
+
+\subsection{}
+
+\subsubsection*{11}
+
+\[
+    4x_1 - 7x_2 = b_1 \\
+    x_1 + 2x_2 = b_2 \\
+    (i) \quad b_1=0, & b_2=1 \\
+    (iii) \quad b_1=-1, & b_2=3 \\
+\]
+\[
+    A^{-1} &= \begin{bmatrix}
+        4 & -7 & 1 & 0 \\ 1 & 2 & 0 & 1       
+    \end{bmatrix} \\
+        R_2 \to R_1 &\to \begin{bmatrix}
+        4 & -7 & 1 & 0 \\ 1 & 2 & 0 & 1       
+    \end{bmatrix} \\
+    R_2(-\frac{1}{15}) &\to \begin{bmatrix}
+        4 & -7 & 1 & 0 \\ 1 & 2 & 0 & 1       
+    \end{bmatrix} \\
+    R_2(-2) + R_1 &\to \begin{bmatrix}
+        4 & -7 & 1 & 0 \\ 1 & 2 & 0 & 1       
+    \end{bmatrix} \\
+    \begin{bmatrix}
+        x_1 \\ x_2
+    \end{bmatrix} &= \begin{bmatrix}
+        \frac{2}{15} & -\frac{7}{15} \\ \frac{-1}{15} & \frac{4}{15}
+    \end{bmatrix} \begin{bmatrix}
+        0 & -4 \\ 1 & 7
+    \end{bmatrix}
+\]
+
+\subsubsection*{14}
+\[
+    6x_1 - 4x_2 = b_1 \\
+    3x_1 - 2x_2 = b_2 \\
+\]
+\[
+    A^{-1} &= \begin{bmatrix}
+        6 & -4 & b_1 \\ 3 & -2 & b_2
+    \end{bmatrix} \\
+        R_1 \to R_2 &\to \begin{bmatrix}
+        3 & -2 & b_2 \\ 6 & -4 & b_2
+    \end{bmatrix} \\
+    R_1(-2)+R_2 &\to \begin{bmatrix}
+        3 & -2 & b_2 \\ 0 & 0 & -2b_2 + b_1
+    \end{bmatrix} \\
+\]
+Not consistent, $\infty$ solutions
+
+\subsection{}
+\subsubsection{Diagonal Matrix}
+
+We know about three different types of matricies.
+\[
+    \begin{bmatrix}
+        a & b \\ c & d
+    \end{bmatrix}^n && n=1, 2, 3 \dots
+\]
+To power $A$.
+\[
+    A && && D\\
+     \begin{bmatrix}
+        a & b \\ c & d
+        \end{bmatrix} && \to_{ERO} && \begin{bmatrix}
+        d_1 & 0 \\ 0 & d_2
+    \end{bmatrix}
+\]
+This is called \textbf{ diagonalization. }
+\[
+    D^k &= \begin{bmatrix}
+        d_1 ^ k & 0 \\ 0 & d_2^k
+    \end{bmatrix} && \text{k is any real number.}
+\]
+\[
+    k=-1 && D^{-1} = \begin{bmatrix}
+        \frac{1}{d_1} & 0 \\ 0 & \frac{1}{d_2}
+    \end{bmatrix}
+\]
+$D$ is invertible if $d_1 \ne 0$, $d_2 \ne 0$
+
+\subsubsection*{7}
+\[
+    A &= \bmt{1 & 0 \\ 0 & -2}
+\]
+
+\subsubsection{ Triangular Matrix }
+
+\[
+    \bmt{a & 0 & \dots & 0 \\ a & a & \dots & 0  \\ \vdots & \vdots & \ddots & \vdots \\ a & a & \dots & a}
+           &&
+    \bmt{0 & b & \dots & b \\ 0 & 0 & \dots & b  \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \dots & 0} \\
+    \hfill \\
+    \text{ Lower $\Delta$ } && \text{Upper $\Delta$}
+\]
+
+\subsubsection{Symetric Matrix}
+\[
+    A = n \quad x \quad n \\
+\]
+\[
+    A \quad \text{is symetric if} \quad A = A^T
+\]
+
+\subsubsection*{26}
+
+\[
+    A &=\bmt{2 & a-2b+2c & 2a+b+c \\ 3 & 5 & a+c \\ 0 & -2 & 7} \\
+    A^T &= \dots
+\]
+
+\[
+    a-2b+2c&=3\\
+    a-2b+2c&=3\\
+    2a+b+c&=0\\
+    a+c&=2\\
+\]
+
+\[
+    &\bmt{
+        1 & -2 & 2 & 3 \\ 
+        2 & 1 & 1 & 0 \\
+        1 & 0 & 1 & 2 \\
+    } \\
+    &\bmt{
+        1 & -2 & 2 & 3 \\ 
+        2 & 1 & 1 & 0 \\
+        0 & 0 & -1 & -1 \\
+    } \\
+    &\bmt{
+        1 & -2 & 2 & 3 \\ 
+        2 & 1 & 1 & 0 \\
+        0 & 0 & 1 & 1 \\
+    } \\
+    &\bmt{
+        1 & -2 & 2 & 3 \\ 
+        0 & 5 & -2 & -6 \\
+        0 & 0 & 1 & 1 \\
+    } \\
+    \vdots %TODO: Fill in
+\]
+
+\subsection{Matrix Transformations}
+
+Linear transformations are the real \textbf{meal} of Linear Algebra. The big reason why we are really really studying this is because of one very valuable property of linear transformations.
+\textbf{They preserve the structure of the original space.}
+Much like algebra, when you do something with the matricies, any transformation you do is reversible. Not in the sense that every transformation matrix has a inverse, but there is a 1:1 mapping of every point in the original space to the transformed space such that the following rules hold.
+
+\[
+    T((x, y, \dots) + (a, b, \dots)) &= T(x+a, y+b, \dots) \\
+    T(k(x, y, \dots)) &= kT(x,y,\dots)
+\]
+
+If you can find any input to $T(\vec{u})$ that causes either of those rules to fail, it is not a linear transformation. This is a \textbf{Proof by contradiction.}
+
+For more info watch \href{https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab}{Essence of Linear Algebra} by \href{https://www.youtube.com/@3blue1brown}{3Blue1Brown}. 3Blue1Brown does an amazing job of giving you and example and building intution for why certain things work. Also \dots \textbf{those animations :weary:}
+\subsubsection*{16}
+
+\[
+    T&: R^{4} \to R^{2}
+\]
+
+\[
+    w_1 &= 2x_1 + 2x_2 -5x_3-x_4\\
+    w_2 &= x_1 - 5x_2 +2x_3-3x_4\\
+\]
+
+\dots
+
+\subsubsection*{18}
+
+b).
+\[
+    T(x_1, x_2, x_3) &= (x_1, x_2-x_3, x_2) && x=(1,0,5) \\ 
+    T = \bmt{1 & 0 & 0 \\ 0 & 1 & -1 \\ 0 & 1 & 0} \bmt{1 \\ 0 \\ 5} &= \bmt{1 \\ -5 \\ 0} \\
+    T(1, 0, 5) &= (1, -5, 0)
+\]
+
+\[
+    \vec{u}, \quad \vec{v} && \text{Two vectors}
+\]
+\begin{enumerate}
+    \item 
+        \[
+            T(\vec{u} + \vec{v}) &= T(\vec{u}) + T(\vec{v}) \\
+            T(k \vec{u}) &= kT(\vec{u}) && \text{$k$-scalar.}
+        \]
+\end{enumerate}
+
+\subsubsection*{22}
+a)
+
+\[
+    t(x, y, z) &= (x+y, y+z, x) \\
+    let \quad t(a, b, c) &= (a+b, b+c, a) \\
+    T[(x, y, z)+(a,b,c)] &= T(x+a,y+b,z+c) \\
+    T(x,y,z) + T(a,b,c) &= (x+y,y+z,x)+(a+b,b+c,a) \\
+    &= (x+y+a+b,y+z+b+c,x+a) \\
+\]
+
+b)
+
+\[
+    T(k(x,y,z)) &= T(kx,ky,kz) \\
+                &=(kx+ky, ky,+kz, kx) \\
+                &=k(x+y, y,+z, x) \\
+                &=kT(x,y,z) \\
+\]
+
+$\to \quad T$ is a linear transformation.
+
+\subsubsection*{24}
+
+a)
+\[
+    T(x,y) &= (x, y+1) \\
+\]
+\end{document}
