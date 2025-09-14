@@ -1,11 +1,11 @@
 1-8,
-1 a),
-3 b),
-5 a),
-7 a),
-9,
-15,
-17,
-19 b),
-21 a),
-23 a)
+1 a),A\text{ has size }3 \times 2., Find the domain and comdomain of the transformation $T_A(x) = Ax$.
+3 b),\begin{aligned} w_1 &= 5x_1 - 7x_2 \\ w_2 &= 6x_1 + x_2 \\ w_3 &= 2x_1 + 3x_2 \end{aligned}, Find the domain and codomain defined by the equations.
+5 a),\begin{bmatrix} 3 & 1 & 2 \\ 6 & 7 & 1 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix}, Find the domain and codomain of the transformation defined by the matrix product.
+7 a),"T(x_1, x_2) = (2x_1 - x_2, x_1 + x_2)", Find the domain and codomain of the transformation $T$ defined by the equations.
+9,T\left(\begin{bmatrix}x_1\\x_2\end{bmatrix}\right) = \begin{bmatrix}4x_1\\x_1-x_2\\3x_2\end{bmatrix}
+15,," Find the standard matrix for the operator $T: R^3 \to R^3$ defined by, \[\begin{array} w_1 = 3x_1 + 5x_2 - x_3\\w_2 = 4x_1 - x_2 + x_3\\w_3 = 3x_1 + 2x_2 - x_3\end{array}\] and then compute $T(-1, 2, 4)$ by directly sustituing the equations and then by matrix multiplication."
+17,"(a) T(x_1, x_2) = (-x_1 + x_2, x_2); \mathbf{x} = (-1, 4)\\(b) T(x_1, x_2, x_3) = (2x_1 - x_2 + x_3, x_2 + x_3, 0); \mathbf{x} = (2, 1, -3)", "In Exercises 17–18, find the standard matrix for the transformation and use it to compute $T(\mathbf{x})$. Check your result by substituting directly in the formula for $T$."
+19 b),A = \begin{bmatrix} -1 & 2 & 0 \\ 3 & 1 & 5 \end{bmatrix}; \ \mathbf{x} = \begin{bmatrix} -1 \\ 1 \\ 3 \end{bmatrix}, Find $T_A(x)$ and express your answer in matrix form.
+21 a),"T(x, y) = (2x + y, x - y)", Show that $T$ is a matrix transformation but using the previous Theorem of homogenaity and linear transformation.
+23 a),"T(x, y) = (x^2, y)", Show that $T$ is not a matrix transformation.

@@ -1,8 +1,7 @@
 1-7,
-9,
-13,
-19,
-21,
-25,
-27
-
+9,A = \begin{bmatrix} \frac{1}{2} & 0 & 0\\ 0 & \frac{1}{3} & 0\\ 0 & 0 & \frac{1}{4} \end{bmatrix}, "Find $A^2$, $A^{-2}$, $A^{-k}$ (where $k$ is any integer) by inspection."
+13,\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}^{39}, Compute the indicated quantity.
+19,\begin{bmatrix} 0 & 6 & -1 \\ 0 & 7 & -4 \\ 0 & 0 & -2 \end{bmatrix}, Determine by inspection whether the matrix is invertible.
+21,\begin{bmatrix} 1 & 0 & 0 & 0 \\ 2 & -5 & 0 & 0 \\ 4 & -3 & 4 & 0 \\ 1 & -2 & 1 & 3 \end{bmatrix}
+25,A = \begin{bmatrix} 4 & -3 \\ a+5 & -1 \end{bmatrix}, Find all values of the unknown constants for which A is symetric.
+27,A = \begin{bmatrix} x-1 & x^2 & x^4 \\ 0 & x+2 & x^3 \\ 0 & 0 & x-4 \end{bmatrix}, Find all values of $x$ for which $A$ is invertible.
