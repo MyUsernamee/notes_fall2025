@@ -1,6 +1,6 @@
 **/textbook.pdf
 **/*.aux
-**/*.fdb_latemk
+**/*.fdb_latexmk
 **/*.log
 **/*.fls
 **/*.out
