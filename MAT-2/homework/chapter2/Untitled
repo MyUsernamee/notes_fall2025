@@ -1,0 +1,51 @@
+1. (2x - 1)dx + (3y + 7)dy = 0
+2. (2x + y)dx - (x + 6y)dy = 0
+3. (5x + 4y)dx + (4x - 8y^3)dy = 0
+4. (\sin y - y \sin x)dx + (\cos x + x \cos y - y)dy = 0
+5. (2y^2x - 3)dx + (2yx^2 + 4)dy = 0
+6. \left(2y - \frac{1}{x} + \cos 3x\right)\frac{dy}{dx} + \frac{y}{x^2} - 4x^3 + 3y \sin 3x = 0
+7. (x + y)(x - y)dx + x(x - 2y)dy = 0
+8. \left(1 + \ln x + \frac{y}{x}\right)dx = (1 - \ln x)dy
+9. (y^3 - y^2 \sin x - x)dx + (3xy^2 + 2y \cos x)dy = 0
+10. (x^3 + y^3)dx + 3xy^2dy = 0
+11. (y \ln y - e^{-xy})dx + \left(\frac{1}{y} + x \ln y\right)dy = 0
+12. \frac{2x}{y}dx - \frac{x^2}{y^2}dy = 0
+13. x\frac{dy}{dx} = 2xe^x - y + 6x^2
+14. (3x^2y + e^y)dx + \left(\frac{1}{y} + x \ln y\right)dy = 0
+15. \left(1 - \frac{3}{x} + y\right)dx + \left(1 - \frac{3}{y} + x\right)dy = 0
+16. (e^y + 2xy \cosh x)y' + xy^2 \sinh x + y^2 \cosh x = 0
+17. \left(x^2y^3 - \frac{1}{1 + 9x^2}\right)\frac{dx}{dy} + x^3y^2 = 0
+18. (5y - 2x)y' - 2y = 0
+
+19. (\tan x - \sin x \sin y) dx + \cos x \cos y dy = 0
+20. (3x \cos 3x + \sin 3x - 3) dx + (2y + 5) dy = 0
+21. (1 - 2x^2 - 2y) \frac{dy}{dx} = 4x^3 + 4xy
+22. (2y \sin x \cos x - y + 2y^2 e^{xy^2}) dx = (x - \sin^2 x - 4xy e^{xy^2}) dy
+23. (4x^3y - 15x^2 - y) dx + (x^4 + 3y^2 - x) dy = 0
+24. \left(\frac{1}{x} + \frac{1}{x^2} - \frac{y}{x^2 + y^2}\right) dx + \left(ye^y + \frac{x}{x^2 + y^2}\right) dy = 0
+
+
+25. (x + y)^{2} dx + (2xy + x^{2} - 1)dy = 0, \quad y(1) = 1
+26. (e^{x} + y)dx + (2 + x + ye^{y})dy = 0, \quad y(0) = 1
+27. (4y + 2x - 5)dx + (6y + 4x - 1)dy = 0, \quad y(-1) = 2
+28. \left(\frac{3y^{2} - x^{2}}{y^{5}}\right) \frac{dy}{dx} + \frac{x}{2y^{4}} = 0, \quad y(1) = 1
+29. (y^{2} \cos x - 3x^{2}y - 2x)dx + (2y \sin x - x^{3} + \ln y)dy = 0, \quad y(0) = e
+30. \left(\frac{1}{1 + y^{2}} + \cos x - 2xy\right) \frac{dy}{dx} = y(y + \sin x), \quad y(0) = 1
+In Problems 31-34 find the value of k so that the given differential equation is exact.
+31. (y^{3} + kxy^{4} - 2x)dx + (3xy^{2} + 20x^{2}y^{3})dy = 0
+32. (2x - y \sin xy + ky^{4})dx - (20xy^{3} + x \sin xy)dy = 0
+33. (2xy^{2} + ye^{x})dx + (2x^{2}y + ke^{x} - 1)dy = 0
+34. (6xy^{3} + \cos y)dx + (kx^{2}y^{2} - x \sin y)dy = 0
+35. Determine a function M(x, y) so that the following differential equation is exact:
+M(x, y) dx + \left(xe^{xy} + 2xy + \frac{1}{x}\right)dy = 0.
+36. Determine a function N(x, y) so that the following differential equation is exact:
+\left(y^{1/2}x^{-1/2} + \frac{x}{x^{2} + y}\right)dx + N(x, y)dy = 0.
+
+
+37. 6xy dx + (4y + 9x^2) dy = 0, \mu(x, y) = y^2
+38. -y^2 dx + (x^2 + xy) dy = 0, \mu(x, y) = 1/x^2y
+39. (-xy \sin x + 2y \cos x) dx + 2x \cos x dy = 0, \mu(x, y) = xy
+40. y(x + y + 1)dx + (x + 2y)dy = 0, \mu(x, y) = e^x
+41. (2y^2 + 3x) dx + 2xy dy = 0, \mu(x, y) = x
+42. (x^2 + 2xy - y^2) dx + (y^2 + 2xy - x^2) dy = 0, \mu(x, y) = (x + y)^{-2}
+43. Show that any separable first-order differential equation in the form h(y)dy = g(x)dx = 0 is also exact.
