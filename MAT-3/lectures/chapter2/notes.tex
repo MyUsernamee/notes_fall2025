@@ -1,0 +1,213 @@
+\documentclass{article}
+\usepackage{custom}
+\usepackage{shortex}
+\title{Chapter 2}
+
+\setcounter{section}{2}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+\subsection{Determinant}
+
+\bdefn
+Determinant is a real association with a square matrix.
+
+\textbf{Note:}
+\begin{enumerate}
+    \item If $detA = 0$ $A$ is singular.
+    \item The system of eqs. from $A$ has no soln.
+\end{enumerate}
+\edefn
+
+For a 2x2 matrix
+
+\[
+    A&=\bmt{a & b \\ c & d} \\
+     & \lt| \begin{matrix} a & b \\ c & d \end{matrix} \rt|= det \, A = ad - bc \\
+\]
+
+For 3x3 or above, use expansion method.
+
+\[
+    3\times 3 \to 2\times2\,(3) \to \text{Use the $2\times2$ formula}
+\]
+
+\bdefn
+Given the matrix:
+\[
+    \bmt{ a_{11} & a_{12} & a_{13} \\ 
+        \vdots & \ddots & \vdots \\ 
+    a_{31} & \dots & a_{33} }
+\]
+
+\textbf{Minor:} $M_{22}$ is obtained by deleting the determinent. Correspdoning row 2 and column 2.
+\[
+    M_{22} &= \bmt{a_{11} & a_{13} \\ a_{31} & a_{33}} = a_{11}a_{33} - a_{13}a_{31}
+\]
+\edefn
+
+\bdefn
+\textbf{Cofactor:} $C_{22} = M_{22}$
+e.g. $C_{23} = (2+3=5 \text{ odd}) = ( - )M_{23}$
+\edefn
+
+\bexa
+
+\subsubsection*{1}
+
+\[
+    A&=\bmt{1 & -2 & 3 \\ 6 & 7 & -1 \\ -3 & 1 & 4} \\
+    M_{22} &= \begin{vmatrix}
+     1 & 3 \\ -3 & 4
+    \end{vmatrix} = 4-(-9) = 13 \\
+        C_{22}&=13 \\
+    M_{21} &= \begin{vmatrix}
+     -2 & 3 \\ 1 & 4
+    \end{vmatrix} = -8-3=-11 \\
+        C_{21}&=11
+\]
+
+\subsubsection*{6}
+
+\[
+    \begin{bmatrix}
+        4 & 1 \\  8 & 2
+    \end{bmatrix} & \\
+    \begin{vmatrix}
+        4 & 1 \\  8 & 2
+    \end{vmatrix} &= 8-8 = 0 \qquad \text{Not invertible.}
+\]
+\dots
+\subsubsection*{22}
+
+\[
+    A&=\begin{bmatrix} 
+    3 & 3 & 1 \\ 1 & 0 & -4 \\ 1 & -3 & 5
+    \end{bmatrix}\\
+    det(A)&= \begin{bmatrix} 
+        3 & -3 & -1 \\ 1 & 0 & -4 \\ 1 & -3 & 5
+    \end{bmatrix} \\
+          &= -\begin{vmatrix} 
+          0 & -4 \\ -3 & 5
+          \end{vmatrix} + \begin{vmatrix} 
+          1 & 0 \\ 1 & -3
+          \end{vmatrix}
+\]
+\eexa
+
+\bdefn
+Property of $n\times n$
+
+\[
+    \begin{vmatrix} 
+        a_{11} & \dots & 0 \\ \vdots & \ddots & \vdots \\ c & \dots & a_{nn}
+    \end{vmatrix} = a_{11}a_{22}\dots a_{nn} \qquad \text{Multiplication of diagonal (major)} \\
+\]
+\edefn
+
+\subsection{Determinant Properties}
+\bdefn
+\hfill
+    \begin{enumerate}
+        \item $\begin{vmatrix} 
+        a & b \\ 0 & 0
+        \end{vmatrix} = \begin{vmatrix} 
+        0 & b \\ 0 & d
+        \end{vmatrix} = 0$ 
+        \item $\begin{vmatrix} 
+        a & b \\ c & d
+        \end{vmatrix} = \begin{vmatrix} 
+        c & d \\ a & b
+        \end{vmatrix}=-\begin{vmatrix} 
+        b & a \\ d & c
+        \end{vmatrix}$
+        \item $\begin{vmatrix} 
+        a & b \\ c & d
+        \end{vmatrix} = \begin{vmatrix} 
+        a & c \\ b & d
+        \end{vmatrix}$ \\
+        $det(A) = det(A^{T})$ 
+    \item $\begin{vmatrix} 
+    ka & kb \\ kc & kd
+    \end{vmatrix} = k^{2} \begin{vmatrix} 
+    a & b \\ c & d
+    \end{vmatrix}$ \\
+    $\begin{vmatrix} 
+    ka & b \\ kc & d
+    \end{vmatrix} = \begin{vmatrix} 
+    ka & kb \\ c & d
+    \end{vmatrix} = k \begin{vmatrix} 
+    a & b \\ c & d
+    \end{vmatrix}$ \\
+    $\begin{vmatrix} 
+    k(n\times n)
+    \end{vmatrix} = k^{n} \begin{vmatrix} 
+    n\times n
+    \end{vmatrix}$ 
+    \item $\begin{vmatrix} 
+    a & b \\ c & d
+    \end{vmatrix} = \begin{vmatrix} 
+    a & b \\ ka+c & kb+d
+    \end{vmatrix} = \begin{vmatrix} 
+    ka + b & b \\ kd + d & d
+    \end{vmatrix}$ 
+    \item $\begin{vmatrix} 
+    a & b \\ ka & kb
+    \end{vmatrix} = \begin{vmatrix} 
+    ka & b \\ kc & kd
+    \end{vmatrix} = 0$ 
+    \end{enumerate}
+\edefn
+
+\bexa
+\subsubsection*{10}
+
+\[
+    & \begin{bmatrix} 
+    3 & 6 & -9 \\ 0 & 0 & -2 \\ -2 & 1 & 5
+    \end{bmatrix} \\
+    R_{2}\leftrightarrow R_{3} \to & - \begin{vmatrix} 
+    3 & 6 & -9 \\ -2 & 1 & 5 \\ 0 & 0 & -5
+    \end{vmatrix} \\
+    R_{1} \text{ factor } 3 \to & \begin{vmatrix} 
+        1 & 2 & -3 \\-2 & 1 & 5 \\ 0 & 0 & -2
+    \end{vmatrix} \\
+    \dots
+\]
+\eexa
+
+\subsection{Properties of derterminet.}
+
+First lets start with the matrix
+\[
+    A&=\begin{bmatrix} 
+    -4 & 2 & -2 \\ 1 & 0 & 1 \\ 3 & -1 & 1
+    \end{bmatrix}.
+\]
+
+\begin{enumerate}
+    \item \[
+            det A = &\begin{bmatrix} 
+            -4 & 2 & -2 \\ 1 & 0 & 1 \\ 3 & -1 & 1
+            \end{bmatrix} \\
+                R_{1}(-2) \to &\begin{bmatrix} 
+            2 & -1 & 1 \\ 1 & 0 & 1 \\ 3 & -1 & 1
+            \end{bmatrix} \\
+            R_{1} \leftrightarrow R_{2} \to& \begin{vmatrix} 
+            1 & 0 & 1 \\ 2 & -1 & 1 \\ 3 & -1 & 1
+            \end{vmatrix} \\
+            R_{1}(-2) + R_{2}\quad R_{1}(-3)+R_{3} \to &2 \begin{vmatrix} 
+                1 & 0 & 1 \\ 0 & -1 & -1 \\ 0 & -1 & -2
+            \end{vmatrix} \\
+            R_{2}(-1) + R_{3} \to & 2 \begin{vmatrix} 
+                1 & 0 & 1 \\ 0 & -1 & -1 \\ 0 & 0 & -1
+            \end{vmatrix} \\
+            &= 2(-1)(-1) = 2\\
+    \]
+    \item Column operation (+ expansion if needed).
+
+\end{enumerate}
+\end{document}
