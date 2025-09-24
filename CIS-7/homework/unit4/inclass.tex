@@ -1,3 +1,4 @@
+
 \documentclass{article}
 \usepackage{custom}
 \usepackage{shortex}
@@ -12,15 +13,36 @@
     \item The Sum rule is applicable when you have two sets of possible actions $A$ and $B$. Where $A \subset S$, $B \subset S$, but $A \cap B = 0$. The possible set of choices is $|A| + |B|$
     \item \begin{enumerate}
         \item $4(5) = 20$
-	\item $4 + 5 = 9$ 
-	\item $(3 + 2 + 1)(5) = 30$
+	    \item $4 + 5 = 9$ 
+	    \item $\binom{4}{2}(5) = 30$
     \end{enumerate}
     \item The product rule is applicable when you have two sets with the same set of restrictions as before, but you can perform one action from each set simultaneously.
-    \item You would have $39^{3}$ possible combinations.
-    \item The software must attempt $( 26 + 26 + 10 )^{7}$
-    \item $(26 + 26 + 10 + 16)^{8}$
-    \item In the worst case scenario $0.5(26 + 26 + 10 + 16)^{8}$ seconds, but it could also pick the right one on the first try, which would take $0.5$ seconds; On average, it would take $0.25(26 + 26 + 10 + 16)^{8}$ seconds.
-    \item $(52^{8} - 52)(10^{8} - 10)$
+    \item $41\cdot 40\cdot 39 = 63{,}960$
+    \item \begin{enumerate}
+        \item $62^{7}$
+        \item $78^{8}$
+        \item Worst case: $0.5(78^{8})$ seconds, Best case: $0.5$ seconds, Average case: $0.25(78^{8})$ seconds
+        \item $62^{8} - 52^{8} - 10^{8}$
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item $30+40+50 = 120$
+        \item $30 \cdot 40 \cdot 50 = 60{,}000$
+        \item $\binom{50}{5} = 2{,}118{,}760$
+        \item $\binom{120}{5} = 190{,}578{,}024$
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item $\lfloor \tfrac{987}{8} \rfloor - \lfloor \tfrac{99}{8} \rfloor = 111$
+        \item $\lfloor \tfrac{987}{2} \rfloor - \lfloor \tfrac{99}{2} \rfloor = 444$
+        \item $648$
+    \end{enumerate}
+    \item $\lceil 38/7 \rceil = 6$
+    \item A permutation is an ordered arrangement of distinct objects. The number of permutations of $k$ elements chosen from $n$ is $P(n,k) = \dfrac{n!}{(n-k)!}$.
+    \item \begin{enumerate}
+        \item $P(5,3) = 60$
+        \item $\binom{5}{4}\binom{2}{2}\binom{3}{3} = 5$
+        \item $5! \cdot 2! = 240$
+    \end{enumerate}
 \end{enumerate}
 
 \end{document}
+end{document}
