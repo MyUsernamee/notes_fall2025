@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{custom}
+\usepackage{shortex}
+\title{Sound Waves}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+What are sound waves?
+\begin{itemize}
+    \item Oscilations of pressure.
+    \item Oscilating molecules
+        "Displacement amplitude" $\to$ "$A$" (Typically very tiny\dots microsopic)\\
+        Instead we used "Pressure Amplitude"
+
+        \[
+            P_{max} = BkA
+        \]
+
+        Where $B$ is the bulk modulus, K is the wave number $k \lambda = 2\pi$, and $A$ is the displacement amplitude.
+
+        \[
+            A &&\to&& \text{very small} \\
+            B &&\to&& \text{very large} \\
+            P_{max} &&\to&& \text{reasonable}
+        \]
+\end{itemize}
+
+String waves?
+
+\[
+    v&=\sqrt{\frac{\text{tension}}{\mu \quad \leftarrow \quad \text{linear density}}} \\
+    \hfill
+     &\text{Power} = \frac{1}{2}\mu v w^{2} A^{2}
+\]
+
+In general\dots
+
+\bdefn
+\(
+    \boxed{ v = \sqrt{\frac{\text{"elastic factor"}}{\text{"intertial factor"}}} }
+\)
+\edefn
+Back to sound waves, let's start with an idealized example.
+A air tube.
+
+% TIKZ TUBE.
+
+\[
+    \text{mass} =& \text{density} \cdot \text{volume} \\
+    m =& \rho \cdot S \cdot vt \\
+    \text{momentum} =& \text{mass} \cdot \text{veloctiy} \\
+    =& \rho S vt \cdot v_{y}
+\]
+
+Pressure in a medium\dots
+
+\[
+    P =& -B \frac{\Delta V}{V} \\
+    =& B \frac{S v_{y} t}{S v t} \\
+    =& B \frac{v_{y}}{v}
+\]
+
+\[
+    \text{Force} =& P \cdot S \\
+    F =& B \frac{v_{y}}{v} \cdot S
+\]
+
+\[
+    \text{Impluse} =& F\cdot t \\
+    =& B \frac{v_{y}}{v} \cdot S \cdot t \\
+    \rho S vt \cdot v_{y}=& B \frac{v_{y}}{v} \cdot S \cdot t \\
+\]
+
+\bdefn
+\[
+    \boxed{ \rho v = B \quad v = \sqrt{\frac{B}{\rho}} }
+\]
+\edefn
+
+What are the units for all of these values though?
+
+\bcent
+\btabr{| c | c | c | c |}
+\hline
+Density? & SI Unit & & $\frac{kg}{m^{3}}$ \\
+\hline
+B? & SI Unit & Pascal & $\frac{N}{m^{2}}$ \\
+\hline
+\etabr
+\ecent
+
+
+
+\end{document}
