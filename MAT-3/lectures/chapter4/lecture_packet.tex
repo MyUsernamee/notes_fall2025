@@ -1,0 +1,88 @@
+\documentclass{report}
+\usepackage{enumitem}
+\usepackage{custom}
+\usepackage{shortex}
+\title{Chapter 4 Lecture Packet}
+
+\setcounter{chapter}{4}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+Before we begin I want o outline what the point of this packet is. The idea is you take this lecture until you move to the next chapter, and fill it out as you go through class. Each subsection contains will start by listing the thereoms needed for that subsection, then you will be given a few practice problems to complete in class. I find personally that I work best when I am able to do the problem my self. You will also be given a notes page to write summaries / algorithms for your self.
+
+\pagebreak
+
+\section{Real Vector Spaces}
+
+\bdefn
+We call $V$ a vector space if it follows these ten conditions.
+
+\begin{enumerate}
+    \item If $u$ and $v$ are object in V, then $u + v$ is in $V$ 
+    \item $u + (v + w) = (u+v)+w$ 
+    \item There is an object, $0$ in $V$, called a \textit{zero vector} for $V$, such that $0+u=u+0=u$ for all u in $V$.
+    \item For each $u$ in $V$, there is an object $-u$ in $V$, called a \textit{negative} of $u$, such that $u + (-u)=(-u)+u=0$. 
+    \item if $k$ is any scalar and $u$ is any object in $V$, then $ku$ is in $V$. 
+    \item $k(u+v)=ku+kv$ 
+    \item $(k + m)u = ku + mu$
+    \item $k(mu)=(km)(u)$ 
+    \item $1u = u$
+\end{enumerate}
+
+
+\brmku
+Something to notice here is that this doesn't state anything about vector operations at, all. This truly does mean that any set with those 10 properties is a vector space. A great example of this is the set of real numbers, $\sdR$.
+\ermku
+
+To show a space is a vector space:
+
+\begin{enumerate}
+    \item Identify the set $V$ of objects that will become vectors. 
+    \item Identify the addition and scalar mutliplication operations on $V$. 
+    \item Verify Axioms 1 and 6; that is, adding two vector in $V$ produces a vector in $V$, and multipliying a vector in $V$ by a scalar also produces a vector in $V$. Axiom 1 is called \textit{closure under addition}, and Axiom 6 is called \textit{closure under scalar mutliplication}. 
+    \item Confirm that Axioms 2, 3, 4, 5, 6, 7, 8, 9, and 10 hold.
+\end{enumerate}
+
+\edefn
+
+\bthm
+Let $V$ be a vector space, $u$ a vector in $V$, and $k$ a scalar; then:
+\begin{enumerate}
+    \item $0u=0$ 
+    \item $k0=0$ 
+    \item $(-1)u=-u$ 
+    \item If $ku=0$, then $k=0$ or $u=0$.
+\end{enumerate}
+\ethm
+
+\bexa
+$\sdR^{n}$ is a vector space.
+\eexa
+
+\pagebreak
+
+\subsection{Notes}
+
+\pagebreak
+
+\subsection{Homework}
+
+
+\subsubsection*{1.}
+Let $V$ be the set of all ordered pairs of real numbers, and consider the following addition and scalar multiplication operations on $u = (u1, u2)$ and $v = (v1, v2)$:
+
+\[
+        u + v = (u1 + v1, u2 + v2), ku = (0, ku2)
+\]
+
+    (a) Compute u + v and ku for u = (-1, 2), v = (3, 4), and k = 3.
+    (b) In words, explain why V is closed under addition and scalar multiplication.
+    (c) Since addition on V is the standard addition operation on R2, certain vector space axioms hold for V because they are known to hold for R2. Which axioms are they?
+    (d) Show that Axioms 7, 8, and 9 hold.
+    (e) Show that Axiom 10 fails and hence that V is not a vector space under the given operations.
+
+
+\end{document}
