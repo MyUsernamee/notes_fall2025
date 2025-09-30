@@ -1,0 +1,9 @@
+**/*.aux
+**/*.fdb_latexmk
+**/*.log
+**/*.fls
+**/*.out
+**/*.synctex*
+**/.*
+!.gitattributes
+!.gitignore
