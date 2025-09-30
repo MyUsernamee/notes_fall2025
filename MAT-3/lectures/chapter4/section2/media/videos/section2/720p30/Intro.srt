@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:04,698
+Hello everyone, today I want to go over what was covered in linear
+
+2
+00:00:04,798 --> 00:00:09,496
+algebra for Chapter 4, sections one and two. I wanted to make this
+
+3
+00:00:09,596 --> 00:00:14,876
+video to solidify my understanding of the concept and learn some Manim. :)
+

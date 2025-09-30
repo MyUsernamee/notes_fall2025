@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{custom}
+\usepackage{shortex}
+\title{Chapter 4}
+
+\setcounter{section}{4}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+\subsection{Real Vector Spaces}
+
+\bdefn
+We call $V$ a vector space if it follows these ten conditions.
+
+\begin{enumerate}
+    \item If $u$ and $v$ are object in V, then $u + v$ is in $V$ 
+    \item $u + (v + w) = (u+v)+w$ 
+    \item There is an object, $0$ in $V$, called a \textit{zero vector} for $V$, such that $0+u=u+0=u$ for all u in $V$.
+    \item For each $u$ in $V$, there is an object $-u$ in $V$, called a \textit{negative} of $u$, such that $u + (-u)=(-u)+u=0$. 
+    \item if $k$ is any scalar and $u$ is any object in $V$, then $ku$ is in $V$. 
+    \item $k(u+v)=ku+kv$ 
+    \item $(k + m)u = ku + mu$
+    \item $k(mu)=(km)(u)$ 
+    \item $1u = u$
+\end{enumerate}
+
+
+\brmku
+Something to notice here is that this doesn't state anything about vector operations at, all. This truly does mean that any set with those 10 properties is a vector space. A great example of this is the set of real numbers, $\sdR$.
+\ermku
+
+To show a space is a vector space:
+
+\begin{enumerate}
+    \item Identify the set $V$ of objects that will become vectors. 
+    \item Identify the addition and scalar mutliplication operations on $V$. 
+    \item Verify Axioms 1 and 6; that is, adding two vector in $V$ produces a vector in $V$, and multipliying a vector in $V$ by a scalar also produces a vector in $V$. Axiom 1 is called \textit{closure under addition}, and Axiom 6 is called \textit{closure under scalar mutliplication}. 
+    \item Confirm that Axioms 2, 3, 4, 5, 6, 7, 8, 9, and 10 hold.
+\end{enumerate}
+
+\edefn
+
+\bthm
+Let $V$ be a vector space, $u$ a vector in $V$, and $k$ a scalar; then:
+\begin{enumerate}
+    \item $0u=0$ 
+    \item $k0=0$ 
+    \item $(-1)u=-u$ 
+    \item If $ku=0$, then $k=0$ or $u=0$.
+\end{enumerate}
+\ethm
+
+\pagebreak
+
+\subsection{Subspaces}
+
+\bdefn
+A subset $W$ of a vector space $V$ is called a $\textit{subspace}$ of $V$ if $W$ is itself a vector space under the addition and scalar multiplication defined on $V$.
+
+Written as a set, we are essentially saying,
+
+\[
+    \cbra{W \mid W \subset V}
+\]
+
+
+\edefn
+
+\bthm
+If $W$ is a set of one or more vectors in a vector space $V$, then $W$ is a subspace of $V$ if and only if the following conditions are satisfied.
+
+(a) If $u$ and $v$ are vectors in W, then $u$ + $v$ is in $W$.
+
+(b) If k is a scalar and $u$ is a vector in W, then ku is in $W$.
+\ethm
+
+
+
+\end{document}
