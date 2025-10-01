@@ -1,3 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/home/dihydromonoxide/Documents/notes_fall2025/MAT-3/lectures/chapter4/section2/media/videos/section2/720p30/partial_movie_files/Intro/uncached_00000.mp4'
-file 'file:/home/dihydromonoxide/Documents/notes_fall2025/MAT-3/lectures/chapter4/section2/media/videos/section2/720p30/partial_movie_files/Intro/uncached_00001.mp4'
