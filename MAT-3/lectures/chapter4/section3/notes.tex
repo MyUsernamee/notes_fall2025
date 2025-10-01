@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage{custom}
+\usepackage{shortex}
+\title{Section 4.3 Linear Independence.}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+Linear independence is when two elements do not change in relation to the other.
+We can analyze this geometrically.
+Let's imagine we have:
+
+\[
+    \cbra{u_{1}, u_{2}} \in \sdR^{2}
+\]
+
+\bdefn
+\[
+    S = \cbra{u_{1}, u_{2}, \dots, u_{m}}
+\]
+
+If $V_{f} = hV_{f}$, thwn these vectors are L.D. (Linearly dependent) to each other, otherwise they are L.I. (Linearly Independent)
+\edefn
+\hfill
+
+\bthm
+To decide vectors are LI, or LD. \\
+\bcent
+$S = {\vec{V_{1}}, \vec{V_{2}},\dots, \vec{V_{m}} }$ in $\skR^{n}$, C-scalar.\\
+\ecent
+\begin{enumerate}
+    \item For $C_{1}V_{1} + C_{2}V_{2} + \dots + C_{m}V_{m} = 0$. \\
+        \bcent
+        \begin{tabular}{lc}
+            If $C_{i} \ne 0$ &  $\to$ L.D.  \\
+            If $C_{1} = C_{2} = \dots = C_{m} = 0$ & $\to$ L.I.  \\
+        \end{tabular}
+        \ecent
+    \item $V_{i}=CV_{j}$ \quad LD (definition)
+    \item 
+        \[
+            \vec{0}\in S  && L.D. \\
+            C\vec{0} = 0 \\
+            C\in \skR  \\
+        \]
+    \item $S=\cbra{\vec{V}}$ and $\vec{V}$ is non zero. L.I. \\
+        \bcent
+        $C\vec{V}=0$ \\
+        $C = 0$ in $\vec{V}\ne0$ L.I. 
+        \ecent
+    \item \hfill 
+        \bcent
+        \begin{tabular}{lll}
+            If $m > n$, & L.D. e.g. $\cbra{\vec{V_{1}}, \vec{V_{2}}, \vec{V_{3}}}$ & $\skR^{2}$ \\
+            If $m < n$, & $\cbra{\vec{V_{1}}, \vec{V_{2}}}$ & $\skR^{2}$  No conclusion, use other methods. \\
+            If $m=n$,& use determinent. &
+        \end{tabular}
+        \ecent
+    \item Wronskia's method. \\
+        \[
+            & f, g &  \\
+            w = & \begin{vmatrix} 
+            f & g \\ f' & g'
+        \end{vmatrix} && =0 \qquad \text{L.D} \\
+                && && \ne 0 \qquad \text{L.I}
+        \] \\
+    Note: To span vectors in the same set, use LD vectors in the set. To span vectors in a space, use LI vectors in the set.
+\end{enumerate}
+\ethm
+
+\subsection*{Examples}
+
+\subsubsection*{1 a)}
+
+\[
+    u_{1} &= (-1, 2, 4) \\
+    u_{2} &= (5, -10, -20) \\
+    u_{2} &= 5u, \qquad \text{LD}
+\]
+
+\subsubsection*{2 b)}
+
+\bcent
+4 vectors for $\skR^{3}$ LD
+\ecent
+
+\subsubsection*{4 a)}
+
+Determine whether LD or LI in $\skP_{2}$
+
+\[
+    2 - x + 4x^{2}, \quad 3 + 6x + 2x^{2}, \quad 2 + 10x - 4x^{2} && \text{Use determinent} \\
+    \begin{vmatrix} 
+    c & x & x^{2} \\ 2 & 3 & 2 \\ -1 & 6 & 10 \\ 4 & 2 & -4
+    \end{vmatrix} = 39 \ne 0, \quad \text{LI}
+\]
+
+\subsubsection*{5 b)}
+
+\[
+    \begin{bmatrix} 
+    1 & 0 & 0 \\ 0 & 0 & 0
+\end{bmatrix}, \quad \begin{bmatrix} 
+0 & 0 & 1 \\ 0 & 0 & 0
+\end{bmatrix} , \quad \begin{bmatrix} 
+0 & 0 \\ 0 & 0 \\ 1 & 0
+\end{bmatrix}, \quad M_{23} \\
+\]
+\[
+    aV_{1} + bV_{2} + c &= 0 \\
+    a &= 0 \\
+    b &= 0 \\
+    c &= 0 \quad \text{LI} \\
+\]
+
+\subsubsection*{20.}
+
+Use Wronskian to show that the functions $f_{1}(x) = e^{x}$, $f_{2}(x)=xe^{x}$, and $f_{3}(x)=x^{2}e^{x}$ are linearly dependent.
+
+\[
+    w = \begin{vmatrix} 
+    e^{x} & xe^{x} & x^{2}e^{x} \\ e^{x} & e^{x}+xe^{x} & 2xe^{x}+x^{2}e^{x} \\ e^{x} & 2e^{x}+xe^{x} & 2e^{x}+4xe^{x}+x^{2}e^{x}
+    \end{vmatrix}
+\]
+
+\subsubsection*{26}
+
+\[
+    S = \cbra{v_{1}, v_{2}, v_{3}} &\in V \qquad LD \\
+    v_{4} \in V, \text{ not in } S \\
+\]
+\end{document}
