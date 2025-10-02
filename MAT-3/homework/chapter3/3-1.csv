@@ -1,0 +1,8 @@
+3-1,
+3,"(a) P1(3, 5), \quad P2(2, 8) \quad (b) P1(5, -2, 1),\quad P2(2, 4, 2)", Find the components of the vector $P_1P_2$
+7,"(a) u has the same direction as v = (4, -2, -1). \\ (b) u is oppositely directed to v = (4, -2, -1).","Find an initial point P of a nonzero vector u = PQ with terminal point Q(3, 0, -5) and such that"
+11 d),"(6\mathbf{v} - \mathbf{w}) - (4\mathbf{u} + \mathbf{v})", "Let $\mathbf{u} = (-3, 2, 1, 0)$, $\mathbf{v} = (4, 7, -3, 2)$, and $\mathbf{w} = (5, -2, 8, 1)$. Find the components of"
+15,"(a) (4, 2, 0, 6, 10, 2) \\ (b) (4, -2, 0, -6, -10, -2) \\ (c) (0, 0, 0, 0, 0, 0)", "Which of the following vectors in $\skR^6$, if any, are parallel to $u = (-2, 1, 0, 3, 5, 1)$?"
+17,"","Let $\mathbf{u} = (1, -1, 3, 5)$ and $\mathbf{v} = (2, 1, 0, -3)$. Find scalars a and b so that a $\mathbf{u} + b\mathbf{v} = (1, -4, 9, 18)$."
+19,"c_1(1, -1, 0) + c_2(3, 2, 1) + c_3(0, 1, 4) = (-1, 1, 19)", "Find $c_1$, $c_1$, $c_1$"
+21,"","Show that there do not exist scalars $c_1$, %c_2%, and $c_3$ such that $c_1(-2, 9, 6) + c_2(-3, 2, 1) + c_3(1, 7, 5) = (0, 5, 4)$"
