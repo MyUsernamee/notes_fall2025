@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{custom}
+\usepackage{shortex}
+\title{4-1}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+\subsubsection*{1}
+
+\begin{itemize}
+    \item a) $u + v = (2, 6)$,  $ku = (0, 12)$
+    \item b) $V$ is a linear transformation where all vectors of the space result in a vector that is also contained in that space. 
+    \item c) Axioms 1-5 
+    \item d) $k(u+v) = ku + kv$
+        \[
+            u=(a, b); && \quad v=(c, d) \\
+        \]
+        \[
+            \text{Axiom 7 states: } k(u + v) &= k(a, b) + v(c + d) \\
+            k((a, b) + (c, d)) &= (0, kb) + (0, kd) \\ 
+            k(a + c, b + d) &= \\
+            (0, k(b + d)) &= \\
+            (0, kb + kd)) &= (0, kb + kd) \\
+        \]
+        Axiom 8:
+        \[
+            (k + m)u &= ku + mu  \\
+            (k + m)(a, b) &= k(a, b) + m(a, b) \\ 
+            (0, (k + m)b) &= (0, kb) + (0, mb) \\ 
+            (0, kb + mb) &= (0, kb + mb)
+        \]
+        Axiom 9:
+        \[
+            k(mu) &= (km)(u) \\ 
+            k(m(a, b)) &= (km)(a, b) \\
+            k(0, mb) &= (0, kmb) \\
+            (0, kmb) &= (0, kmb) \\
+        \]
+    \item e)  
+        \[
+            1u &= u \\
+            1(a, b) &= (a, b) \\
+            (0, 0) &\ne (a, b) \\
+        \]
+\end{itemize}
+
+\subparagraph{5}
+
+The set of all pairs of real number of the form $(x, y)$, where $x \ge 0$, with the standard operations on $R^{2}$ is not a vector space because it violates axiom 5 which states $-u$ exist in the vector space.
+
+\[
+    (-1, y) \notin \cbra{\skR^{2}, \, (x, y) \mid x >= 0}
+\]
+
+
+\end{document}
