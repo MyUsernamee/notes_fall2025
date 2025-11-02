@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{custom}
+\usepackage{shortex}
+\title{Section 4-8}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+\section*{Rank-Nulity Therom}
+
+Let's say we have a linear system of equations, such as:
+
+\[
+    3x_{1} + 4x_{2} + 6x_{3} &= 3
+    9x_{1} - 2x_{2} + 3x_{2} &= 7
+\]
+
+If we were to turn this into an augmented matrix, we would have:
+
+\[
+    \begin{bmatrix} 
+    3 & 4 & 6 & 3 \\ 9 & -2 & 3 & 7
+    \end{bmatrix}
+\]
+
+We can see, just from the shape of the matrix, there are free variables. Meaning we would say that is has a nulity of 1.
+
+We might also be given:
+
+\[
+    3x_{1} + 4x_{2} + 6x_{3} &= 3
+    9x_{1} - 2x_{2} + 3x_{2} &= 7   
+    6x_{1} + 8x_{2} + 12x_{3} &= 6
+\]
+
+As an augmented matrix:
+
+\[
+    \begin{bmatrix} 
+    3 & 4 & 6 & 3 \\ 9 & -2 & 3 & 7 \\ 6 & 8 & 12 & 6
+    \end{bmatrix} 
+\]
+
+This might not be imediately obvious that there is is a free variable here, but if we rearrange the rows into row echelon form;
+
+\[
+    &\begin{bmatrix} 
+        3 & 4 & 6 & 3 \\ 9 & -2 & 3 & 7 \\ 6 & 8 & 12 & 6
+    \end{bmatrix} \\
+    (\frac{1}{2})R_{3} \to & \begin{bmatrix} 
+    3 & 4 & 6 & 3 \\ 9 & -2 & 3 & 7 \\ 3 & 4 & 6 & 3
+    \end{bmatrix} \\
+    (-1)R_{1} + R_{3} \to & \begin{bmatrix} 
+        3 & 4 & 6 & 3 \\ 9 & -2 & 3 & 7 \\ 0 & 0 & 0 & 0
+    \end{bmatrix}
+\]
+
+We can see that there is a row of 0's, meaning there is a free variable. This is the same as the matrix above.
+
+This leads us to the \textbf{Rank-Nulity Theorem}
+
+\bthm
+Given a matrix $A$ which is in row echelon form with the size $n\times m$ where $n\ge m$;
+
+\begin{enumerate}
+    \item $\text{nulity} (A) = \text{rank} (A) - \text{rank} (A^{T})$
+    \item Given $Ax=b$ if $\text{nulity}(A) = 0$, $A$ is consistent.
+\end{enumerate}
+
+If $n<m$, and there are no free variables, or no row is all 0's, then the system is over-constrained.
+Another way to think about it is if the nullity is negative, the system is over-constrained.
+
+\subsubsection*{Note: } Though I use the concept of free variables, nullity is not limited to systems. It is a general concept for all matricies / Vector spaces. A more accurate way to think about it is, the nullity it tells you the number of basis vectors in the null space. We will get more into what the null space is later, but the TL;DR is, it is the Vector Space of another Vector Space that results in 0.
+
+\ethm 
+
+\end{document}
