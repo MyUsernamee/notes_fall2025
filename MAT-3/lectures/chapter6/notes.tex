@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{custom}
+\usepackage{shortex}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{arrows}
+\title{Chapter 6}
+
+\setcounter{section}{6}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+\subsection{}
+\subsection{}
+\subsection{Orthonormal bases.}
+
+\bdefn
+
+\textbf{Orthonormal} - This is when two vectors say, $\vec{u_{1}}$ and $\vec{u_{2}}$ are orthogonal (perpendicular), and both are unit vectors (of length 1). They are called \textbf{orthonormal}
+
+\edefn
+
+To convert two vectors to orthonormal, $\vec{u_{1}};\; \vec{u_{2}}$, which we are using as basis for some vector space $S$, we first project them to make them orthogonal, then we normalize both vectors, which we can then use as a coordinate system.
+
+\bcent
+Basis $\to$ Orthogonal $\to$ Orthonormal $\to$ Coordinate System.
+\ecent
+
+\textbf{From this point forward, orthogonal means orthonormal.}
+
+When we want to perform a dot product we are used to the normal notation, but this is limited to Euclidian geometry. As a result we have some new notation.
+
+\(
+    \begin{array}{c|c}
+        \text{Euclidian Notation} & \text{General Notation} \\
+        \hfill \\
+        \vec{u} \cdot \vec{v} & \lt< \vec{u}, \vec{v} \rt>
+    \end{array}
+\)
+
+
+\subsubsection{Gran-Schmit Process}
+
+This is process is used to form orthogonal vectors.
+
+First we will start with an example in 2D.
+
+\bexa
+
+\[
+    u_{1} && u_{2}
+\]
+
+\bcent
+\begin{tikzpicture}
+    \draw[thin, <->, dash pattern] (-4, 0) -- (4, 0) node[above] {$x$};
+    \draw[thin, <->, dash pattern] (0, -4) -- (0, 4) node[above] {$y$};
+    \draw[->] (0,0) -- (2, 1)
+        node[above] {$u_{1}$};
+    \draw[->] (0,0) -- (1, 2)
+        node[above] {$u_{2}$};
+    \draw[->, color=red] (0,0) -- (-1, 2)
+        node[above] {$w_{2}$};
+\end{tikzpicture}
+\ecent
+
+\eexa
+
+\end{document}
