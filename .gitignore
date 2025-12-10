@@ -8,3 +8,4 @@
 **/*.aup3
 !.gitattributes
 !.gitignore
+!.gitmodules
